@@ -1,0 +1,145 @@
+.simple-plotlines-plotlines {
+	display: grid;
+	overflow: scroll;
+	grid-auto-columns: 12em;
+	grid-auto-rows: 4em;
+	place-items: center;
+}
+
+.simple-plotlines-header-cell {
+	display: block;
+	align-content: center;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	height: 100%;
+	width: 100%;
+	padding: 1em;
+	overflow: hidden;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.simple-plotlines-buffer-cell {
+	display: block;
+	border-bottom: 1px solid;
+	height: 1px;
+	width: 100%;
+	opacity: 0.5;
+}
+
+.simple-plotlines-cell {
+	display: block;
+	align-content: center;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.simple-plotlines-cell:hover {
+	text-decoration-line: underline;
+}
+
+.simple-plotlines-divider-column {
+	border-left: 1px dashed var(--background-modifier-border);
+}
+
+.simple-plotlines-color-0 { color: #fd7f6f; }
+.simple-plotlines-color-1 { color: #7eb0d5; }
+.simple-plotlines-color-2 { color: #b2e061; }
+.simple-plotlines-color-3 { color: #bd7ebe; }
+.simple-plotlines-color-4 { color: #ffb55a; }
+.simple-plotlines-color-5 { color: #ffee65; }
+.simple-plotlines-color-6 { color: #beb9db; }
+.simple-plotlines-color-7 { color: #fdcce5; }
+.simple-plotlines-color-8 { color: #8bd3c7; }
+
+.simple-plotlines-border-color-0 { border-color: #fd7f6f; }
+.simple-plotlines-border-color-1 { border-color: #7eb0d5; }
+.simple-plotlines-border-color-2 { border-color: #b2e061; }
+.simple-plotlines-border-color-3 { border-color: #bd7ebe; }
+.simple-plotlines-border-color-4 { border-color: #ffb55a; }
+.simple-plotlines-border-color-5 { border-color: #ffee65; }
+.simple-plotlines-border-color-6 { border-color: #beb9db; }
+.simple-plotlines-border-color-7 { border-color: #fdcce5; }
+.simple-plotlines-border-color-8 { border-color: #8bd3c7; }
+
+.simple-plotlines-act-overview {
+	display: flex;
+	gap: 1em;
+	padding: 1em;
+	overflow-x: auto;
+	height: 100%;
+}
+
+.simple-plotlines-overview-column {
+	display: flex;
+	flex: 0 0 20em;
+	flex-direction: column;
+	background-color: var(--background-secondary);
+	padding: 0.5em;
+	max-height: 100%;
+	border-radius: 1em;
+}
+
+.simple-plotlines-overview-column-header {
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 0.5em;
+	text-align: center;
+}
+
+.simple-plotlines-overview-column-content {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	overflow-y: auto;
+	gap: 0.25em;
+}
+
+.simple-plotlines-overview-card {
+	background-color: var(--background-primary);
+	padding: 0.5em;
+	cursor: pointer;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 0.5em;
+}
+
+.simple-plotlines-overview-card:hover {
+	background-color: var(--background-primary-alt);
+}
+
+.simple-plotlines-overview-card-title {
+	margin-bottom: 0.5em;
+}
+
+.simple-plotlines-overview-card-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25em;
+	margin-top: 0.5em;
+}
+
+.simple-plotlines-overview-card-tag {
+	font-size: 0.75em;
+	padding: 0.25em 0.5em;
+	border-radius: 0.25em;
+	background-color: var(--background-secondary);
+}
+
+.simple-plotlines-overview-card.dragging {
+	opacity: 0.25;
+	cursor: grabbing !important;
+}
+
+.simple-plotlines-overview-card.drag-over {
+	border: 1px solid var(--interactive-accent);
+}
+
+.simple-plotlines-overview-card {
+	cursor: grab;
+}
+
+.simple-plotlines-overview-card:active {
+	cursor: grabbing;
+}
