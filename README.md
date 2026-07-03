@@ -6,7 +6,7 @@ https://community.obsidian.md/plugins/simple-plotlines
 
 Organize plotlines across acts by tagging scene notes with the plotlines they progress. Parses all files named `01-01 SCENE NAME.md` (capitalization and file locations up to user). Tag sorting can be specified in `00-00 TAG ORDER.md`.
 
-This plugin stores and reads all the information it needs in note titles and tags. Nothing is stored in a format that could be inconvenient for humans to maintain with vanilla Obsidian. Enabling the plugin causes its two views (elaboration below) to appear and vice versa. Simple!
+This plugin stores and reads all the information it needs in note titles and tags. Nothing is stored in a format that could be inconvenient for humans to maintain with vanilla Obsidian. Enabling the plugin causes its two views (elaboration below) to appear and disabling it removes them. Simple!
 
 https://github.com/user-attachments/assets/d8c9b9c2-8c9d-49ca-aa96-a1f53e448c32
 
@@ -41,13 +41,13 @@ https://github.com/user-attachments/assets/5e93b6ec-6245-4f03-8362-02acba678522
 You may. I want a minimal feature set. I also happen to enjoy writing coding by hand as a hobby. If I'm going to spend ages running a TTRPG campaign or taking notes on a story, it's worthwhile to me to spend some time making tools that work exactly the way I want them to.
 
 #### Q: Does this work on mobile?
-It might, but the views might be awkward and drag and drop will probably not work. Renaming and tagging notes are vanilla Obsidian features on both desktop and mobile, which is all that is necessary to create scenes that are recognized by the plugin. If your vault is synced between mobile and desktop, you can have the plugin only enabled on desktop, and changes you make on mobile will render perfectly fine once they're synced back to desktop. That being said, I left the plugin capable of being enabled on mobile in case you use a tablet with a mouse or something.
+It might, but the views are not optimized for mobile. Renaming and tagging notes are vanilla Obsidian features on both desktop and mobile, which is all that is necessary to work on scenes that are recognized by the plugin. If your vault is synced between mobile and desktop, you can have the plugin only enabled on desktop, and changes you make on mobile will render perfectly fine once they're synced back to desktop. That being said, I left the plugin capable of being enabled on mobile in case you use a tablet with a mouse or something.
 
 #### Q: Could you fix this bug I found or add these features?
 Open an [issue](https://github.com/null-machine/simple-plotlines/issues) or [pull request](https://github.com/null-machine/simple-plotlines/pulls).
 
 #### Q: What happens if two notes have the same act and scene?
-The views will look weird, but nothing bad will happen to your files. Either way, don't do that... If you want to insert a scene in the middle of an act, give it an unused act-scene name, and then use the act overview to drag and drop it where you want. The plugin will rename all relevant scenes for you. (Or rename everything by hand, the plugin sure won't stop you.)
+The views will look weird, but nothing bad will happen to your files. Either way, don't do that... If you want to insert a scene in the middle of an act, give it an unused act-scene name, and then use the act overview to drag and drop it where you want. The plugin will rename all relevant scenes for you. (Or rename everything by hand or script, the plugin sure won't stop you.)
 
 #### Q: Can I have non-integer act or scene numbers?
 Not recommended. Even if the plugin doesn't crash, it's undefined behaviour and may corrupt the plotline view or act overview.
