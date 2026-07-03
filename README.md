@@ -38,7 +38,7 @@ Check out this clip on how to create a scene in a fresh vault (three dashes at t
 https://github.com/user-attachments/assets/5e93b6ec-6245-4f03-8362-02acba678522
 
 #### Q: Why not use XYZ?
-You may. I want a minimal feature set. I also happen to enjoy writing coding by hand as a hobby. If I'm going to spend ages running a TTRPG campaign or taking notes on a story, it's worthwhile to me to spend some time making tools that work exactly the way I want them to.
+You may. I want a minimal feature set. I also happen to enjoy writing code by hand as a hobby. If I'm going to spend ages running a TTRPG campaign or taking notes on a story, it's worthwhile to me to spend some time making tools that work exactly the way I want them to.
 
 #### Q: Does this work on mobile?
 It might, but the views are not optimized for mobile. Renaming and tagging notes are vanilla Obsidian features on both desktop and mobile, which is all that is necessary to work on scenes that are recognized by the plugin. If your vault is synced between mobile and desktop, you can have the plugin only enabled on desktop, and changes you make on mobile will render perfectly fine once they're synced back to desktop. That being said, I left the plugin capable of being enabled on mobile in case you use a tablet with a mouse or something.
