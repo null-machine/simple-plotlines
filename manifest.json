@@ -6,6 +6,5 @@
 	"description": "Organize plotlines across acts by tagging scene notes with the plotlines they progress. Parses all files named `01-01 SCENE NAME.md` (capitalization and file locations up to user). Tag sorting can be specified in `00-00 TAG ORDER.md`.",
 	"author": "null_machine",
 	"authorUrl": "https://github.com/null-machine",
-	"fundingUrl": "https://buymeacoffee.com/nullmachine",
-	"isDesktopOnly": "true"
+	"fundingUrl": "https://buymeacoffee.com/nullmachine"
 }
