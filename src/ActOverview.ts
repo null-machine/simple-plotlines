@@ -1,5 +1,6 @@
 import {
-	WorkspaceLeaf
+	WorkspaceLeaf,
+	MarkdownView
 } from 'obsidian';
 
 import {

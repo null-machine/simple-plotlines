@@ -31,20 +31,20 @@ export default class SimplePlotlines extends Plugin {
 		// 	this.activateView(VIEW_TYPE_ACT_OVERVIEW);
 		// });
 		
-		this.registerEvent(this.app.workspace.on('active-leaf-change', (leaf: WorkspaceLeaf | null) => {
-			this.refreshViews();
+		this.registerEvent(this.app.workspace.on('active-leaf-change', async (leaf: WorkspaceLeaf | null) => {
+			await this.refreshViews();
 		}));
 		
-		this.registerEvent(this.app.vault.on('rename', () => {
-			this.refreshViews();
+		this.registerEvent(this.app.vault.on('rename', async () => {
+			await this.refreshViews();
 		}));
 		
-		this.registerEvent(this.app.metadataCache.on('changed', () => {
-			this.refreshViews();
+		this.registerEvent(this.app.metadataCache.on('changed', async () => {
+			await this.refreshViews();
 		}));
 		
-		this.activateView(VIEW_TYPE_PLOTLINES);
-		this.activateView(VIEW_TYPE_ACT_OVERVIEW);
+		await this.activateView(VIEW_TYPE_PLOTLINES);
+		await this.activateView(VIEW_TYPE_ACT_OVERVIEW);
 	}
 	
 	async refreshViews() {
@@ -52,7 +52,7 @@ export default class SimplePlotlines extends Plugin {
 		let leaves = this.app.workspace.getLeavesOfType(VIEW_TYPE_PLOTLINES);
 		
 		if (leaves.length < 1) {
-			this.activateView(VIEW_TYPE_PLOTLINES);
+			await this.activateView(VIEW_TYPE_PLOTLINES);
 		}
 		
 		for (const leaf of leaves) {
@@ -62,7 +62,7 @@ export default class SimplePlotlines extends Plugin {
 		leaves = this.app.workspace.getLeavesOfType(VIEW_TYPE_ACT_OVERVIEW);
 		
 		if (leaves.length < 1) {
-			this.activateView(VIEW_TYPE_ACT_OVERVIEW);
+			await this.activateView(VIEW_TYPE_ACT_OVERVIEW);
 		}
 		
 		for (const leaf of leaves) {
@@ -86,7 +86,7 @@ export default class SimplePlotlines extends Plugin {
 		}
 		
 		if (leaf) {
-			workspace.revealLeaf(leaf);
+			await workspace.revealLeaf(leaf);
 		}
 	}
 	
