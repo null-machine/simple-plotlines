@@ -30,10 +30,6 @@ Scenes appear as cards in this view. Dragging and dropping scene cards reorders 
 
 ## FAQ
 
-#### Q: Why does Obsidian's automated review say "Caution?"
-A: The plugin is fine. Obsidian has a bunch of nitpicky code suggestions that I'll maybe get to later...
-<img width="414" height="441" alt="image" src="https://github.com/user-attachments/assets/9295e739-98d7-43d2-8c64-d22504648206" />
-
 #### Q: How do I get started?
 A: Check out this clip on how to create a scene in a fresh vault:
 
@@ -52,7 +48,7 @@ A: Open an [issue](https://github.com/null-machine/simple-plotlines/issues) or [
 A: The views will look weird, but nothing bad will happen to your files. Either way, don't do that... If you want to insert a scene in the middle of an act, give it an unused act-scene name, and then use the act overview to drag and drop it where you want. The plugin will rename all relevant scenes for you. (Or rename everything by hand, the plugin sure won't stop you.)
 
 #### Q: I like your plugin! Can I support you?
-A: You shall have my eternal gratitude: https://www.buymeacoffee.com/nullmachine
+A: You shall have my eternal gratitude: https://ko-fi.com/null_machine
 
 
 
