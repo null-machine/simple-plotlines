@@ -30,6 +30,10 @@ Scenes appear as cards in this view. Dragging and dropping scene cards reorders 
 
 ## FAQ
 
+#### Q: Why does Obsidian's automated review say "Caution?"
+A: The plugin is fine. Obsidian has a bunch of nitpicky code suggestions that I'll maybe get to later...
+<img width="414" height="441" alt="image" src="https://github.com/user-attachments/assets/9295e739-98d7-43d2-8c64-d22504648206" />
+
 #### Q: Why not use XYZ?
 A: You may. I want a minimal feature set. I also happen to enjoy writing coding by hand as a hobby. If I'm going to spend ages running a TTRPG campaign or taking notes on a story, it's worthwhile to me to spend some time making my tools work exactly the way I want them to.
 
