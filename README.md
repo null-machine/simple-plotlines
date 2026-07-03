@@ -40,7 +40,7 @@ A: It might, but the views might be awkward and drag and drop will probably not 
 A: Open an [issue](https://github.com/null-machine/simple-plotlines/issues) or [pull request](https://github.com/null-machine/simple-plotlines/pulls)!
 
 #### Q: What happens if two notes have the same act and scene?
-A: The plotline view will behave weirdly, so don't do that... If you want to insert a scene in the middle of an act, give it an unused act-scene name, and then use the act overview to drag and drop it where you want. The plugin will rename all relevant scenes for you.
+A: The views will look weird, but nothing bad will happen to your files. Either way, don't do that... If you want to insert a scene in the middle of an act, give it an unused act-scene name, and then use the act overview to drag and drop it where you want. The plugin will rename all relevant scenes for you. (Or rename everything by hand, the plugin sure won't stop you.)
 
 #### Q: I like your plugin! Can I support you?
 A: You shall have my eternal gratitude: https://www.buymeacoffee.com/nullmachine
