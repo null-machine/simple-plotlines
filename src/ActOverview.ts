@@ -25,11 +25,11 @@ export class ActOverview extends SceneScanner {
 	
 	protected render(container: HTMLElement) {
 		
+		container.empty();
 		if (this.scenes.length == 0) {
 			return;
 		}
 
-		container.empty();
 		container.addClass('simple-plotlines-act-overview');
 		
 		const actGroups = new Map<number, Scene[]>();
@@ -76,7 +76,7 @@ export class ActOverview extends SceneScanner {
 						cardTag.setText(tag);
 						const tagIndex = this.lines.indexOf(tag);
 						if (tagIndex !== -1) {
-							cardTag.addClass('simple-plotlines-color-' + (tagIndex % this.colorCount));
+							cardTag.addClass(`simple-plotlines-color-${tagIndex % this.colorCount}`);
 						}
 					}
 				}
@@ -159,7 +159,7 @@ export class ActOverview extends SceneScanner {
 		this.refresh();
 	}
 	
-	private async stackAct(act: Number) {
+	private async stackAct(act: number) {
 		const sortedScenes = this.scenes.filter(i => i.act === act);
 		sortedScenes.sort((a, b) => Number(a.scene) - Number(b.scene));
 		for (let i = sortedScenes.length; i > 0; --i) {

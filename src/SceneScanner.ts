@@ -9,8 +9,8 @@ import {
 export interface Scene {
 	file: TFile;
 	name: string;
-	act: Number;
-	scene: Number;
+	act: number;
+	scene: number;
 	tags: string[];
 }
 
@@ -95,8 +95,8 @@ export abstract class SceneScanner extends ItemView {
 		if (dashIndex === -1 || spaceIndex < dashIndex) {
 			return null;
 		}
-		let act: Number = Number(basename.substring(0, dashIndex));
-		let scene: Number = Number(basename.substring(dashIndex + 1, spaceIndex));
+		let act: number = Number(basename.substring(0, dashIndex));
+		let scene: number = Number(basename.substring(dashIndex + 1, spaceIndex));
 		if (act == null && scene == null) {
 			return null;
 		}

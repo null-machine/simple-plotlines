@@ -25,43 +25,43 @@ export class Plotlines extends SceneScanner {
 	
 	protected render(container: HTMLElement) {
 		
+		container.empty();
 		if (this.scenes.length == 0) {
 			return;
 		}
 		
-		container.empty();
 		let dividerIndexes = [];
 		let blankSalt = 0;
 		
 		// act header
-		let gridTemplateAreas: string = '"B' + blankSalt;
+		let gridTemplateAreas: string = `"B${blankSalt}`;
 		let blank = container.createDiv();
 		blank.setCssStyles({
-			gridArea: 'B' + blankSalt
+			gridArea: `"B${blankSalt}`
 		});
 		++blankSalt;
-		let prevAct: Number = Number.NaN;
+		let prevAct: number = Number.NaN;
 		for (let i = 0; i < this.scenes.length; ++i) {
 			const scene = this.scenes[i];
 			if (!scene) {
 				continue;
 			}
-			gridTemplateAreas += ' A' + scene.act;
+			gridTemplateAreas = `${gridTemplateAreas} A${scene.act}`;
 			if (prevAct !== scene.act) {
 				dividerIndexes.push(i);
 				let actHeader = container.createDiv({cls: 'simple-plotlines-header-cell simple-plotlines-divider-column'});
 				actHeader.setCssStyles({
-					gridArea: 'A' + scene.act
+					gridArea: `A${scene.act}`
 				});
-				actHeader.setText('ACT ' + scene.act);
+				actHeader.setText(`ACT ${scene.act}`);
 				prevAct = scene.act;
 			}
 		}
-		gridTemplateAreas += '"\n';
+		gridTemplateAreas = `${gridTemplateAreas}"\n`;
 		
 		const gridBody: string[] = new Array(this.lines.length).fill('');
 		
-		let salt: Number = 0;
+		let salt: number = 0;
 		
 		for (let i = 0; i < this.scenes.length; ++i) {
 			let scene = this.scenes[i];
@@ -76,8 +76,8 @@ export class Plotlines extends SceneScanner {
 					}
 				}
 				if (sceneAffectsTag) {
-					let area: string = 'A' + scene.act + 'S' + scene.scene + 'I' + salt;
-					gridBody[j] += ' ' + area;
+					let area = `A${scene.act}S${scene.scene}I${salt}`;
+					gridBody[j] = `${gridBody[j]} ${area}`;
 					let sceneArea = container.createDiv({ cls: 'simple-plotlines-cell' });
 					sceneArea.setCssStyles({
 						padding: '1em',
@@ -85,7 +85,7 @@ export class Plotlines extends SceneScanner {
 						cursor: 'pointer'
 					});
 					sceneArea.setText(scene.file.basename);
-					sceneArea.addClass('simple-plotlines-color-' + j % this.colorCount);
+					sceneArea.addClass(`simple-plotlines-color-${j % this.colorCount}`);
 					if (dividerIndexes.contains(i)) {
 						sceneArea.addClass('simple-plotlines-divider-column');
 					}
@@ -101,12 +101,12 @@ export class Plotlines extends SceneScanner {
 					};
 					salt = Number(salt) + 1;
 				} else {
-					gridBody[j] += ' B' + blankSalt;
+					gridBody[j] = `${gridBody[j]} B${blankSalt}`;
 					blank = container.createDiv({ cls: 'simple-plotlines-cell' });
 					const inner = blank.createDiv({ cls: 'simple-plotlines-buffer-cell'});
-					inner.addClass('simple-plotlines-border-color-' + j % this.colorCount);
+					inner.addClass(`simple-plotlines-border-color-${j % this.colorCount}`);
 					blank.setCssStyles({
-						gridArea: 'B' + blankSalt
+						gridArea: `B${blankSalt}`
 					});
 					if (dividerIndexes.contains(i)) {
 						blank.addClass('simple-plotlines-divider-column');
@@ -117,13 +117,13 @@ export class Plotlines extends SceneScanner {
 		}
 		
 		for (let i = 0; i < gridBody.length; ++i) {
-			gridTemplateAreas += '"L' + i + ' ' + gridBody[i] + '"\n';
+			gridTemplateAreas = `${gridTemplateAreas}" L${i} ${gridBody[i]}"\n`;
 			let lineHeader = container.createDiv();
 			lineHeader.setCssStyles({
-				gridArea: 'L' + i
+				gridArea: `L${i}`
 			});
 			lineHeader.setText(this.lines[i] as string);
-			lineHeader.addClass('simple-plotlines-color-' + i % this.colorCount);
+			lineHeader.addClass(`simple-plotlines-color-${i % this.colorCount}`);
 		}
 		
 		container.addClass('simple-plotlines-plotlines');
