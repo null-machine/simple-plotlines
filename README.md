@@ -33,7 +33,7 @@ Scenes appear as cards in this view. Dragging and dropping scene cards reorders 
 ## FAQ
 
 #### Q: How do I get started?
-Check out this clip on how to create a scene in a fresh vault:
+Check out this clip on how to create a scene in a fresh vault (three dashes at the top of a note allows tagging): 
 
 https://github.com/user-attachments/assets/5e93b6ec-6245-4f03-8362-02acba678522
 
