@@ -1,12 +1,12 @@
 # Simple Plotlines
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/null_machine)
+
 Organize plotlines across acts by tagging scene notes with the plotlines they progress. Parses all files named `01-01 SCENE NAME.md` (capitalization and file locations up to user). Tag sorting can be specified in `00-00 TAG ORDER.md`.
 
 This plugin stores and reads all the information it needs in note titles and tags. Nothing is stored in a format that could be inconvenient for humans to maintain with vanilla Obsidian. Enabling the plugin causes its two views (elaboration below) to appear and vice versa. Simple!
 
 https://github.com/user-attachments/assets/d8c9b9c2-8c9d-49ca-aa96-a1f53e448c32
-
-<a href="https://www.buymeacoffee.com/nullmachine" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" height="50" width="217"></a>
 
 ---
 
