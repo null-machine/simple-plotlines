@@ -34,6 +34,10 @@ Scenes appear as cards in this view. Dragging and dropping scene cards reorders 
 A: The plugin is fine. Obsidian has a bunch of nitpicky code suggestions that I'll maybe get to later...
 <img width="414" height="441" alt="image" src="https://github.com/user-attachments/assets/9295e739-98d7-43d2-8c64-d22504648206" />
 
+#### Q: How do I get started?
+A: Check out this clip on how to create the first scene in a fresh vault:
+[20260702_215626.webm](https://github.com/user-attachments/assets/62d8df6d-e078-4ef2-8023-f57f9ba24a5e)
+
 #### Q: Why not use XYZ?
 A: You may. I want a minimal feature set. I also happen to enjoy writing coding by hand as a hobby. If I'm going to spend ages running a TTRPG campaign or taking notes on a story, it's worthwhile to me to spend some time making my tools work exactly the way I want them to.
 
