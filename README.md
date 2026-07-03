@@ -2,11 +2,11 @@
 
 Organize plotlines across acts by tagging scene notes with the plotlines they progress. Parses all files named `01-01 SCENE NAME.md` (capitalization and file locations up to user). Tag sorting can be specified in `00-00 TAG ORDER.md`.
 
-![Demo of the plugin](/screenshots/demo.mp4)
-
 This plugin stores and reads all the information it needs in note titles and tags. Nothing is stored in a format that could be inconvenient for humans to maintain with vanilla Obsidian. Enabling the plugin causes its two views (elaboration below) to appear and vice versa. Simple!
 
-<a href="https://www.buymeacoffee.com/nullmachine" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="25" width="108"></a>
+https://github.com/user-attachments/assets/d8c9b9c2-8c9d-49ca-aa96-a1f53e448c32
+
+<a href="https://www.buymeacoffee.com/nullmachine" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="50" width="217"></a>
 
 ---
 
@@ -18,33 +18,31 @@ Tags found in scene notes are plotlines. Scene notes are identified by the plugi
 
 If the file `00-00 TAG ORDER` exists anywhere in the vault, only tags found in that file will be treated as plotlines, and be displayed in the order they appear in that file.
 
-(The plugin might behave weirdly if multiple notes have the same act and scene, so don't do that...)
-
 ---
 
 ## Act Overview
 
 ![Screenshot of the act overview](/screenshots/act-overview.png)
 
-Scenes appear as cards in this view. Dragging and dropping scene cards reorders them by renaming relevant scene files. It's also a nice and compact chronological view.
+Scenes appear as cards in this view. Dragging and dropping scene cards reorders them by renaming relevant scene files. It's also a nice chronological view.
 
 ---
 
 ## FAQ
 
-Q: Why not use XYZ?
-A: You may. I want a minimal feature set. I also happen to enjoy writing my own code by hand. If I'm going to spend ages writing a TTRPG campaign or taking notes on a story, it's worthwhile to me to spend some time making my tools work exactly the way I want them to.
+#### Q: Why not use XYZ?
+A: You may. I want a minimal feature set. I also happen to enjoy writing code with my own hands. If I'm going to spend ages running a TTRPG campaign or taking notes on a story, it's worthwhile to me to spend some time making my tools work exactly the way I want them to.
 
-Q: Does this work on mobile?
+#### Q: Does this work on mobile?
 A: It might, but the views might be awkward and drag and drop will probably not work. Renaming and tagging notes are vanilla Obsidian features on both desktop and mobile, which is all that is necessary to create scenes that are recognized by the plugin. If your vault is synced between mobile and desktop, you can have the plugin only enabled on desktop, and changes you make on mobile will render perfectly fine once they're synced back to desktop. That being said, I left the plugin capable of being enabled on mobile in case you use a tablet with a mouse or something.
 
-Q: Could you fix this bug I found or add these features?
+#### Q: Could you fix this bug I found or add these features?
 A: Open an [issue](https://github.com/null-machine/simple-plotlines/issues)!
 
-Q: What happens if two notes have the same act and scene?
+#### Q: What happens if two notes have the same act and scene?
 A: The plotline view behaves weirdly, so don't do that... If you want to insert a scene in the middle of an act, give it an unused act-scene name, and then use the act overview to drag and drop it where you want. The plugin will rename all relevant scenes for you.
 
-Q: I like your plugin! Can I support you?
+#### Q: I like your plugin! Can I support you?
 A: Yes please!! https://www.buymeacoffee.com/nullmachine
 
 
