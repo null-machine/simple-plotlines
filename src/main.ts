@@ -1,7 +1,6 @@
 import {
 	Plugin,
-	WorkspaceLeaf,
-	TAbstractFile
+	WorkspaceLeaf
 } from 'obsidian';
 
 import {

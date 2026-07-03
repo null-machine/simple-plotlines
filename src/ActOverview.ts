@@ -1,5 +1,4 @@
 import {
-	App,
 	WorkspaceLeaf
 } from 'obsidian';
 
