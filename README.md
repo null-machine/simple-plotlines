@@ -16,7 +16,7 @@ https://github.com/user-attachments/assets/d8c9b9c2-8c9d-49ca-aa96-a1f53e448c32
 
 ![Screenshot of the plotlines view](/screenshots/plotlines.png)
 
-Tags found in scene notes are plotlines. Scene notes are identified by the plugin if they start with an act and scene identifier `##-##`. For example, the note for Act 4 Scene 3 would be named `04-03 SCENE NAME`. If that scene is tagged with `MAIN MYSTERY`, then it will appear in the plotline for that tag.
+[Tags](https://obsidian.md/help/tags) found in scene notes are plotlines. Scene notes are identified by the plugin if they start with an act and scene identifier `##-##`. For example, the note for Act 4 Scene 3 would be named `04-03 SCENE NAME`. If that scene is tagged with `MAIN MYSTERY`, then it will appear in the plotline for that tag.
 
 If the file `00-00 TAG ORDER` exists anywhere in the vault, only tags found in that file will be treated as plotlines, and be displayed in the order they appear in that file.
 
