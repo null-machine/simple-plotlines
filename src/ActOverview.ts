@@ -123,7 +123,7 @@ export class ActOverview extends SceneScanner {
 					}
 					const leaves = this.app.workspace.getLeavesOfType('markdown');
 					for (const leaf of leaves) {
-						if (leaf.view && 'file' in leaf.view && (leaf.view as any).file?.path === scene.file.path) {
+						if ((leaf.view as MarkdownView).file?.path === scene.file.path) {
 							this.app.workspace.setActiveLeaf(leaf, { focus: true });
 							return;
 						}

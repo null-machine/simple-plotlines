@@ -112,7 +112,7 @@ export abstract class SceneScanner extends ItemView {
 		}
 		for (let i = 0; i < tags.length; ++i) {
 			if (tags[i]) {
-				tags[i] = (tags[i] as String).substring(1);
+				tags[i] = (tags[i] as string).substring(1);
 			}
 		}
 		
