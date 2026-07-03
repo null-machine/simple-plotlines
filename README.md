@@ -49,6 +49,9 @@ Open an [issue](https://github.com/null-machine/simple-plotlines/issues) or [pul
 #### Q: What happens if two notes have the same act and scene?
 The views will look weird, but nothing bad will happen to your files. Either way, don't do that... If you want to insert a scene in the middle of an act, give it an unused act-scene name, and then use the act overview to drag and drop it where you want. The plugin will rename all relevant scenes for you. (Or rename everything by hand, the plugin sure won't stop you.)
 
+#### Q: Can I have non-integer act or scene numbers?
+Not recommended. Even if the plugin doesn't crash, it's undefined behaviour and may corrupt the plotline view or act overview.
+
 #### Q: I like your plugin! Can I support you?
 You shall have my eternal gratitude: https://ko-fi.com/null_machine
 
