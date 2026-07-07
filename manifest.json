@@ -1,7 +1,7 @@
 {
 	"id": "simple-plotlines",
 	"name": "Simple Plotlines",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"minAppVersion": "1.12.7",
 	"description": "Organize plotlines across acts by tagging scene notes with the plotlines they progress. Parses all files named `01-01 SCENE NAME.md` (capitalization and file locations up to user). Tag sorting can be specified in `00-00 TAG ORDER.md`.",
 	"author": "null_machine",

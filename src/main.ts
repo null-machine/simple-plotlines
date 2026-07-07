@@ -43,8 +43,7 @@ export default class SimplePlotlines extends Plugin {
 			await this.refreshViews();
 		}));
 		
-		await this.activateView(VIEW_TYPE_PLOTLINES);
-		await this.activateView(VIEW_TYPE_ACT_OVERVIEW);
+		this.refreshViews();
 	}
 	
 	async refreshViews() {
